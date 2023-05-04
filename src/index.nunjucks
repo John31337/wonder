@@ -1,0 +1,268 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% import '_modules/link/link.nunjucks' as link %}
+{% import '_modules/header/header.nunjucks' as header %}
+{% import '_modules/hero/hero.nunjucks' as hero %}
+{% import '_modules/footer/footer.nunjucks' as footer %}
+
+{% block content %}
+<header class="zone zone-header">
+  {{ header.content() }}
+</header>
+
+<main id="content" style="overflow-x:hidden">
+  <div class="zone hero-zone">
+
+    {{ hero.content() }}
+
+    
+  </div>
+
+    <div class="adrides-border">
+      <div class="triangle-right"></div>
+    </div>
+
+    <div class="adrides-zone"> 
+      <div class="wrapper">      
+            <div class="adrides">
+
+                <div class="adrides-wonder-title">      
+                    <img src="../images/wonder/wonder_park_title.png" alt="Wonder_Park">  
+                </div>
+
+                <div class="adrides-store">
+                  <div class="adrides-store-content">
+                    <p class="adrides-store-content-title">HOW TO GET $WONDER?</p>
+                    <div class="adrides-store-content-step">
+                      <div class="adrides-store-content-step-girl" >
+                        <img src="../images/wonder/wonder_girl.png"/>
+                      </div>       
+                      <div class="adrides-store-content-step-content">
+                        <div class="adrides-store-content-step-content-icon">
+                          <img src="../images/wonder/red_circle.png"/>
+                          <div class="adrides-store-content-step-content-icon-title">STEP 1: Create a MetaMask Wallet</div>
+                        </div>
+                        <p>$WONDER token is available on the Ethereum blockchain. MetaMask is a third party ERC20 (Ethereum) browser wallet, and the very best at that! On Google Chrome, visit metamask.io to download the extension and set up a wallet. On mobile? Get MetaMask's app for iPhone or Android.</p>
+                      </div>
+                    </div>
+                    <div class="adrides-store-content-step">
+                      <div class="adrides-store-content-step-girl" >
+                        <img src="../images/wonder/wonder_girl1.png"/>
+                      </div>                         
+                      <div class="adrides-store-content-step-content">
+                        <div class="adrides-store-content-step-content-icon">
+                          <img src="../images/wonder/red_circle.png"/>
+                          <div class="adrides-store-content-step-content-icon-title">STEP 2: Send $ETH to MetaMask</div>
+                        </div>
+                        <p>Acquire Ethereum through MetaMask itself or transfer it to your MetaMask wallet address from another wallet (e.g. Coinbase or Binance).</p>
+                      </div>                     
+                    </div>
+                    <div class="adrides-store-content-step">
+                      <div class="adrides-store-content-step-girl" >
+                        <img src="../images/wonder/wonder_girl2.png"/>
+                      </div>       
+                      <div class="adrides-store-content-step-content">
+                        <div class="adrides-store-content-step-content-icon">
+                          <img src="../images/wonder/red_circle.png"/>
+                          <div class="adrides-store-content-step-content-icon-title">STEP 3: Swap $ETH for $WONDER</div>
+                        </div>
+                        <p>Enter the amount of $ETH you would like to swap for $WONDER. Click Connect Wallet then Swap.</p>
+                      </div>
+                    </div>                                        
+                  </div>
+                </div>
+
+                {# Wonder Tokenomics #}
+                <div class="adrides-tokenomics">
+                  <p class="adrides-tokenomics-title">TOKENOMICS & STATE</p>
+                  <div class="adrides-tokenomics-content">
+                    <div class="adrides-tokenomics-avatar" >
+                      <img src="../images/wonder/wonder_girl_monkey.png"/>
+                    </div>
+                    <div class="adrides-tokenomics-content-group">
+                      <div class="adrides-tokenomics-content-group-items">
+                        <div class="adrides-tokenomics-content-group-items-item">
+                          <p class="adrides-tokenomics-content-group-items-item-title">$WONDER</p>
+                          <p class="adrides-tokenomics-content-group-items-item-content">TOKEN SYMBOL</p>
+                        </div>
+                        <div class="adrides-tokenomics-content-group-items-item">
+                          <p class="adrides-tokenomics-content-group-items-item-title">2%</p>
+                          <p class="adrides-tokenomics-content-group-items-item-content">THANKS TO TRANSACTION</p>
+                        </div>
+                        <div class="adrides-tokenomics-content-group-items-item">
+                          <p class="adrides-tokenomics-content-group-items-item-title">100 Quadrillion</p>
+                          <p class="adrides-tokenomics-content-group-items-item-content">TOTAL SUPPLY</p>
+                        </div>
+                      </div>
+                      <div class="adrides-tokenomics-content-group-items">
+                        <div class="adrides-tokenomics-content-group-items-item">
+                          <p class="adrides-tokenomics-content-group-items-item-title">200,000+</p>
+                          <p class="adrides-tokenomics-content-group-items-item-content">HOLDERS</p>
+                        </div>
+                        <div class="adrides-tokenomics-content-group-items-item">
+                          <p class="adrides-tokenomics-content-group-items-item-title">156</p>
+                          <p class="adrides-tokenomics-content-group-items-item-content">MARKET CAP</p>
+                        </div>
+                        <div class="adrides-tokenomics-content-group-items-item">
+                          <p class="adrides-tokenomics-content-group-items-item-title">1.2</p>
+                          <p class="adrides-tokenomics-content-group-items-item-content">CURRENT PRICE</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                  </div>
+                </div>
+
+                <div class="adrides-waterwheel">
+                    <img src="../images/wonder/waterwheel.png" />
+                </div>
+
+                <div class="adrides-loadmap">
+                  <div class="adrides-loadmap-parking" >
+                    <img src="../images/wonder/wonder_parking.png" />
+                  </div>
+                  <p class="adrides-loadmap-title">LOADMAP</p>
+                  <div class="wonder-carusel rio-promos">
+                    <div class="adrides-loadmap-card">
+                      <div class="adrides-loadmap-card-number">1. Launch</div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          1,000 Holders
+                        </div>
+                      </div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          Website Launch
+                        </div>
+                      </div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          CoinGecko Listing
+                        </div>
+                      </div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          CoinGecko Listing
+                        </div>
+                      </div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          CoinGecko Listing
+                        </div>
+                      </div>                                            
+                    </div>
+                    <div class="adrides-loadmap-card">
+                      <div class="adrides-loadmap-card-number">2. Growth</div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          5,000 Telegram Members
+                        </div>
+                      </div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          Website Redesign
+                        </div>
+                      </div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          10,000 Holders
+                        </div>
+                      </div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          10,000 Telegram Members
+                        </div>
+                      </div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          20,000 Holders
+                        </div>
+                      </div>                                            
+                    </div>
+                    <div class="adrides-loadmap-card">
+                      <div class="adrides-loadmap-card-number">3. Expansion</div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          SHIPOO Swap (Decentralize Exchange)
+                        </div>
+                      </div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          Initial CEX Listings (Hotbit, Bilaxy, CoinTiger)
+                        </div>
+                      </div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          15,000 Telegram Members
+                        </div>
+                      </div>
+                      <div class="adrides-loadmap-card-item">
+                        <img src="../images/wonder/green_check.svg"/>
+                        <div class="adrides-loadmap-card-item-description">
+                          30,000 Holders
+                        </div>
+                      </div>                                          
+                    </div>                    
+                  </div>
+                </div>
+
+                {# DONATE #}              
+       
+            </div>
+
+            <div class="about">
+              <div class="about-logo">
+                <img src="../images/wonder/tokenomics.png"/>
+              </div>
+              
+              <div class="about-content">
+                <div class="about-section1">
+                  <p class="title">JOIN US</p>
+                  <p class="description">WONDER is a decentralized group of 20+ volunteers community managers with expertise in development, moderation and group coordination. Feel free to say "Hi!".</p>
+                </div>
+                <div class="about-logo-section">
+                  <div class="join-btn">JOIN US</div>
+                  <div class="join-btn">PARTNER WITH US</div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+    <div class="footer-border">
+      <div class="triangle-right"></div>
+    </div>
+
+  <div class="footer-zone">
+    {# <div class="footer-wrapper"> #}
+      <div class="logo-section">
+        <img src="../images/wonder/footer_logo.png" />
+        <p>TM & © 2019 Paramount Pictures. All Rights Reserved.</p>
+      </div>
+      <div class="list-section">
+        <img src="../images/wonder/coppa.png" />
+        <div class="list">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Game Privacy Policy</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    {# </div>   #}
+  </div>
+</main>
+{% endblock %}
